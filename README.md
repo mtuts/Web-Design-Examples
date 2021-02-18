@@ -45,3 +45,34 @@ A step by step examples about designing a website using HTML, CSS, JS, AJax, PHP
   - Lesson 4.2: Using border rules to draw a star.
   - Lesson 4.3: Selector priority order.
   - Lesson 4.4: Complete webpage with reasonable layout
+
+### JavaScript
+- Lab 5
+  - Lesson 5.1: Introduction to internal JavaScript and debugging methods such as `document.write`, `document.writeln`, and `consol.log`.
+  - Lesson 5.2: Defining variables, undefined values, unary operator, automatic type conversion
+  - Lesson 5.3: Arithmetic operation
+  - Lesson 5.4: `if-else-statement`, short `if-statement`, `switch`
+  - Lesson 5.5: loops, breaking out of loop
+  - Lesson 5.6: popup windows (`alert`, `prompt`, and `confirm`)
+  - Lesson 5.7: Defining a `function`, parameters and scopes
+- Lab 6
+  - Lesson 6.1: Data Structure: Array, Stack, and update core language using prototype (example used here: implementing Queue by defining new method dequeue within Array class).
+  - Lesson 6.2: OOP, Defining basic object, class, and class inheritance.
+  - Lesson 6.3: DOM, get element(s) by id, class name, and tag name.
+  - Lesson 6.4: include external JS files, more practice in DOM CSS selector (`querySelector`, `querySelectorAll`).
+  - Lesson 6.5: Create new element and append it to document.
+  - Lesson 6.6: Introduction into Events, (`window.onload`, `addEventListener`, `removeEventListener`, and `window.resize` handlers)
+  - Lesson 6.7: Button click handler, Form submit handler, form validator, and Regular Expression
+- Lab 7
+  - Lesson 7.1:
+    - Concept of multi-threading in JavaScript (simulate multi-threading in JavaScript even though JS does not completely support multi-threading, using `setTimeout`, `setInterval`).
+    - LocalStorage: using browser `localStorage` as our Database storage. 
+  - Lesson 7.2: Keyboard handler
+  - Lesson 7.3: Another usage of `setInterval` and getting window size information.
+  - Lesson 7.4: Introduction to HTML5 canvas, an advance drawing tools (canvas: replace the usage of Macromedia Flash where canvas killed flash since HTML5 released)
+
+  - JavaScript useful usages examples: (lab instructor could show students the possibility of JavaScript which help them to invent new project ideas from these examples)
+    - **AddressBook**: Object-Oriented programming that include form validator, regular expression, manage database (browser localStorage) and much more.
+    - **DrawApp**: Also OOP application provides drawing tools to draw line, circle, rectangle, and square.
+    - **Game**: an interactive game that records points detect when user complete basic level. Students could learn from this example how to interact with keyboard.
+    - **Painter**: a complete application similar to Windows Paint application done in less than 190 lines using JavaScript and HTML5 canvas only to draw several shapes with different setting and colors. Also, it provides how to save canvas image as PNG. Students could learn from this example how to handle mouse and keyboard events such as mouse-move, mouse-down, mouse-up, and keyup.
