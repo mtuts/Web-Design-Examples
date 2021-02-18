@@ -1,5 +1,5 @@
 # Web Design Learn by Example
-A step by step examples about designing a website using [HTML](#html), [CSS](#css), JS, AJax, PHP and MySQL
+A step by step examples about designing a website using [HTML](#html), [CSS](#css), [JS](#JavaScript), [AJax](#Ajax), [PHP and MySQL](#php)
 
 ## Contents
 ### HTML
@@ -29,7 +29,7 @@ A step by step examples about designing a website using [HTML](#html), [CSS](#cs
   - Lesson 2.5: Advanced form
   - Lesson 2.6: iframe, include small window within a webpage.
 
-### CSS {#css}
+### CSS
 - Lab 3
   - Lesson 3.1: Inline CSS
   - Lesson 3.2: Internal CSS
