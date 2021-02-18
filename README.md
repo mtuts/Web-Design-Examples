@@ -31,51 +31,51 @@ A step by step examples about designing a website using [HTML](#html), [CSS](#cs
 
 ### CSS
 - [Lab 3](lab03)
-  - Lesson 3.1: Inline CSS
-  - Lesson 3.2: Internal CSS
-  - Lesson 3.3: External CSS
-  - Lesson 3.4: CSS class and its usage.
-  - Lesson 3.5: Optimizing CSS file by use group selector.
-  - Lesson 3.6: Using border, drawing an egg by using CSS only.
-  - Lesson 3.7: Formatting a paragraph and image by using margin and padding
-  - Lesson 3.8: Background and layers.
-  - Lesson 3.9: Merge several images using background.
+  - [Lesson 3.1](lab03/03.01.lesson.html): Inline CSS
+  - [Lesson 3.2](lab03/03.02.lesson.html): Internal CSS
+  - [Lesson 3.3](lab03/03.03.lesson): External CSS
+  - [Lesson 3.4](lab03/03.04.lesson): CSS class and its usage.
+  - [Lesson 3.5](lab03/03.05.lesson): Optimizing CSS file by use group selector.
+  - [Lesson 3.6](lab03/03.06.lesson): Using border, drawing an egg by using CSS only.
+  - [Lesson 3.7](lab03/03.07.lesson): Formatting a paragraph and image by using margin and padding
+  - [Lesson 3.8](lab03/03.08.lesson): Background and layers.
+  - [Lesson 3.9](lab03/03.09.lesson): Merge several images using background.
 - [Lab 4](lab04)
-  - Lesson 4.1: Pseudo selectors and filter selector.
-  - Lesson 4.2: Using border rules to draw a star.
-  - Lesson 4.3: Selector priority order.
-  - Lesson 4.4: Complete webpage with reasonable layout
+  - [Lesson 4.1](lab03/04.01.lesson): Pseudo selectors and filter selector.
+  - [Lesson 4.2](lab03/04.02.lesson): Using border rules to draw a star.
+  - [Lesson 4.3](lab03/04.03.lesson): Selector priority order.
+  - [Lesson 4.4](lab03/04.04.lesson): Complete webpage with reasonable layout
 
 ### JavaScript
 - [Lab 5](lab05)
-  - Lesson 5.1: Introduction to internal JavaScript and debugging methods such as `document.write`, `document.writeln`, and `consol.log`.
-  - Lesson 5.2: Defining variables, undefined values, unary operator, automatic type conversion
-  - Lesson 5.3: Arithmetic operation
-  - Lesson 5.4: `if-else-statement`, short `if-statement`, `switch`
-  - Lesson 5.5: loops, breaking out of loop
-  - Lesson 5.6: popup windows (`alert`, `prompt`, and `confirm`)
-  - Lesson 5.7: Defining a `function`, parameters and scopes
+  - [Lesson 5.1](lab05/05.01.lesson.html): Introduction to internal JavaScript and debugging methods such as `document.write`, `document.writeln`, and `consol.log`.
+  - [Lesson 5.2](lab05/05.02.lesson.html): Defining variables, undefined values, unary operator, automatic type conversion
+  - [Lesson 5.3](lab05/05.03.lesson.html): Arithmetic operation
+  - [Lesson 5.4](lab05/05.04.lesson.html): `if-else-statement`, short `if-statement`, `switch`
+  - [Lesson 5.5](lab05/05.05.lesson.html): loops, breaking out of loop
+  - [Lesson 5.6](lab05/05.06.lesson.html): popup windows (`alert`, `prompt`, and `confirm`)
+  - [Lesson 5.7](lab05/05.07.lesson.html): Defining a `function`, parameters and scopes
 - [Lab 6](lab06)
-  - Lesson 6.1: Data Structure: Array, Stack, and update core language using prototype (example used here: implementing Queue by defining new method dequeue within Array class).
-  - Lesson 6.2: OOP, Defining basic object, class, and class inheritance.
-  - Lesson 6.3: DOM, get element(s) by id, class name, and tag name.
-  - Lesson 6.4: include external JS files, more practice in DOM CSS selector (`querySelector`, `querySelectorAll`).
-  - Lesson 6.5: Create new element and append it to document.
-  - Lesson 6.6: Introduction into Events, (`window.onload`, `addEventListener`, `removeEventListener`, and `window.resize` handlers)
-  - Lesson 6.7: Button click handler, Form submit handler, form validator, and Regular Expression
+  - [Lesson 6.1](lab06/06.01.lesson.html): Data Structure: Array, Stack, and update core language using prototype (example used here: implementing Queue by defining new method dequeue within Array class).
+  - [Lesson 6.2](lab06/06.02.lesson.html): OOP, Defining basic object, class, and class inheritance.
+  - [Lesson 6.3](lab06/06.03.lesson.html): DOM, get element(s) by id, class name, and tag name.
+  - [Lesson 6.4](lab06/06.04.lesson): include external JS files, more practice in DOM CSS selector (`querySelector`, `querySelectorAll`).
+  - [Lesson 6.5](lab06/06.05.lesson): Create new element and append it to document.
+  - [Lesson 6.6](lab06/06.06.lesson): Introduction into Events, (`window.onload`, `addEventListener`, `removeEventListener`, and `window.resize` handlers)
+  - [Lesson 6.7](lab06/06.07.lesson): Button click handler, Form submit handler, form validator, and Regular Expression
 - [Lab 7](lab07)
-  - Lesson 7.1:
+  - [Lesson 7.1](lab07/07.01.lesson.html):
     - Concept of multi-threading in JavaScript (simulate multi-threading in JavaScript even though JS does not completely support multi-threading, using `setTimeout`, `setInterval`).
     - LocalStorage: using browser `localStorage` as our Database storage. 
-  - Lesson 7.2: Keyboard handler
-  - Lesson 7.3: Another usage of `setInterval` and getting window size information.
-  - Lesson 7.4: Introduction to HTML5 canvas, an advance drawing tools (`canvas`: replace the usage of Macromedia Flash where canvas killed flash since HTML5 released)
+  - [Lesson 7.2](lab07/05.02.lesson.html): Keyboard handler
+  - [Lesson 7.3](lab07/05.03.lesson): Another usage of `setInterval` and getting window size information.
+  - [Lesson 7.4](lab07/05.04.lesson): Introduction to HTML5 canvas, an advance drawing tools (`canvas`: replace the usage of Macromedia Flash where canvas killed flash since HTML5 released)
 
   - JavaScript useful usages examples: (lab instructor could show students the possibility of JavaScript which help them to invent new project ideas from these examples)
-    - **AddressBook**: Object-Oriented programming that include form validator, regular expression, manage database (browser localStorage) and much more.
-    - **DrawApp**: Also OOP application provides drawing tools to draw line, circle, rectangle, and square.
-    - **Game**: an interactive game that records points detect when user complete basic level. Students could learn from this example how to interact with keyboard.
-    - **Painter**: a complete application similar to Windows Paint application done in less than 190 lines using JavaScript and HTML5 canvas only to draw several shapes with different setting and colors. Also, it provides how to save canvas image as PNG. Students could learn from this example how to handle mouse and keyboard events such as mouse-move, mouse-down, mouse-up, and keyup.
+    - [**AddressBook**](lab07/examples/AddressBook): Object-Oriented programming that include form validator, regular expression, manage database (browser localStorage) and much more.
+    - [**DrawApp**](lab07/examples/DrawApp): Also OOP application provides drawing tools to draw line, circle, rectangle, and square.
+    - [**Game**](lab07/examples/Game): an interactive game that records points detect when user complete basic level. Students could learn from this example how to interact with keyboard.
+    - [**Painter**](lab07/examples/Painter): a complete application similar to Windows Paint application done in less than 190 lines using JavaScript and HTML5 canvas only to draw several shapes with different setting and colors. Also, it provides how to save canvas image as PNG. Students could learn from this example how to handle mouse and keyboard events such as mouse-move, mouse-down, mouse-up, and keyup.
 
 ### PHP
 - [Lab 8](lab08)
