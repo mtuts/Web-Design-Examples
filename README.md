@@ -41,10 +41,10 @@ A step by step examples about designing a website using [HTML](#html), [CSS](#cs
   - [Lesson 3.8](lab03/03.08.lesson): Background and layers.
   - [Lesson 3.9](lab03/03.09.lesson): Merge several images using background.
 - [Lab 4](lab04)
-  - [Lesson 4.1](lab03/04.01.lesson): Pseudo selectors and filter selector.
-  - [Lesson 4.2](lab03/04.02.lesson): Using border rules to draw a star.
-  - [Lesson 4.3](lab03/04.03.lesson): Selector priority order.
-  - [Lesson 4.4](lab03/04.04.lesson): Complete webpage with reasonable layout
+  - [Lesson 4.1](lab04/04.01.lesson): Pseudo selectors and filter selector.
+  - [Lesson 4.2](lab04/04.02.lesson): Using border rules to draw a star.
+  - [Lesson 4.3](lab04/04.03.lesson): Selector priority order.
+  - [Lesson 4.4](lab04/04.04.lesson): Complete webpage with reasonable layout
 
 ### JavaScript
 - [Lab 5](lab05)
@@ -67,9 +67,9 @@ A step by step examples about designing a website using [HTML](#html), [CSS](#cs
   - [Lesson 7.1](lab07/07.01.lesson.html):
     - Concept of multi-threading in JavaScript (simulate multi-threading in JavaScript even though JS does not completely support multi-threading, using `setTimeout`, `setInterval`).
     - LocalStorage: using browser `localStorage` as our Database storage. 
-  - [Lesson 7.2](lab07/05.02.lesson.html): Keyboard handler
-  - [Lesson 7.3](lab07/05.03.lesson): Another usage of `setInterval` and getting window size information.
-  - [Lesson 7.4](lab07/05.04.lesson): Introduction to HTML5 canvas, an advance drawing tools (`canvas`: replace the usage of Macromedia Flash where canvas killed flash since HTML5 released)
+  - [Lesson 7.2](lab07/07.02.lesson.html): Keyboard handler
+  - [Lesson 7.3](lab07/07.03.lesson): Another usage of `setInterval` and getting window size information.
+  - [Lesson 7.4](lab07/07.04.lesson): Introduction to HTML5 canvas, an advance drawing tools (`canvas`: replace the usage of Macromedia Flash where canvas killed flash since HTML5 released)
 
   - JavaScript useful usages examples: (lab instructor could show students the possibility of JavaScript which help them to invent new project ideas from these examples)
     - [**AddressBook**](lab07/examples/AddressBook): Object-Oriented programming that include form validator, regular expression, manage database (browser localStorage) and much more.
@@ -79,41 +79,41 @@ A step by step examples about designing a website using [HTML](#html), [CSS](#cs
 
 ### PHP
 - [Lab 8](lab08)
-  - Lesson 8.1: Introduction to creating simple PHP file and print methods
-  - Lesson 8.2: define PHP block within HTML code
-  - Lesson 8.3: Defining variables, concatenate operator, and arithmetic operations
-  - Lesson 8.4: if-else-statement, short if-statement, switch, random function.
-  - Lesson 8.5: loops, breaking out of loop
-  - Lesson 8.6: Function and variables scopes
+  - [Lesson 8.1](lab08/08.01.lesson.html): Introduction to creating simple PHP file and print methods
+  - [Lesson 8.2](lab08/08.02.lesson.html): define PHP block within HTML code
+  - [Lesson 8.3](lab08/08.03.lesson.html): Defining variables, concatenate operator, and arithmetic operations
+  - [Lesson 8.4](lab08/08.04.lesson.html): if-else-statement, short if-statement, switch, random function.
+  - [Lesson 8.5](lab08/08.05.lesson.html): loops, breaking out of loop
+  - [Lesson 8.6](lab08/08.06.lesson.html): Function and variables scopes
 - [Lab 9](lab09)
-  - Lesson 9.1: Array declaration and concept of dictionary.
-  - Lesson 9.2: An example with undeclared function in order to see what will happen to deal with errors
-  - Lesson 9.3: Corrected version of lesson 9.2
-  - Lesson 9.4: Concept of code reuse and how to deal with several files.
-  - Lesson 9.5: Classes declaration basics
-  - Lesson 9.6: More examples in OOP.
-    - SingletonDemo: an implementation of Singleton Design Pattern in order to learn usage of static attribute and method within the class and outside it. Also, how to prevent creating more than one instance of class.
+  - [Lesson 9.1](lab09/09.01.lesson.html): Array declaration and concept of dictionary.
+  - [Lesson 9.2](lab09/09.02.lesson.html): An example with undeclared function in order to see what will happen to deal with errors
+  - [Lesson 9.3](lab09/09.03.lesson.html): Corrected version of lesson 9.2
+  - [Lesson 9.4](lab09/09.04.lesson): Concept of code reuse and how to deal with several files.
+  - [Lesson 9.5](lab09/09.05.lesson): Classes declaration basics
+  - [Lesson 9.6](lab09/09.06.lesson): More examples in OOP.
+  - [SingletonDemo](lab09/SingletonDemo): an implementation of Singleton Design Pattern in order to learn usage of static attribute and method within the class and outside it. Also, how to prevent creating more than one instance of class.
 - [Lab 10](lab)
-  - Lesson 10.1: Basic Form handler.
-  - Lesson 10.2: Using image as submit button in order to know where user click by sending `x` and `y`.
-  - Lesson 10.3: Advanced Form handler, and file I/O read and write from files.
-  - Lesson 10.4: Using JSON to store data into file and read from file using json decoder.
-  - Lesson 10.5: Cookies and Session
-  - Lesson 10.6: File upload, handling file upload and list files from a folder
+  - [Lesson 10.1](lab10/10.01.form-handler): Basic Form handler.
+  - [Lesson 10.2](lab10/10.02.form-image): Using image as submit button in order to know where user click by sending `x` and `y`.
+  - [Lesson 10.3](lab10/10.03.advance-form-handler): Advanced Form handler, and file I/O read and write from files.
+  - [Lesson 10.4](lab10/10.04.json-form-handler): Using JSON to store data into file and read from file using json decoder.
+  - [Lesson 10.5](lab10/10.05.cookies): Cookies and Session
+  - [Lesson 10.6](lab10/10.06.file-upload): File upload, handling file upload and list files from a folder
 - [Lab 11](lab11)
-  - Lesson 11.1: Basic mysql connection (using mysqli)
-  - Lesson 11.2: MySQL connection error handling using `try-catch`.
-  - Lesson 11.3: OOP connection.
-  - Lesson 11.4: Universal PHP connection `PDO` (Oracle, MySQL, MsSQL, ..).
-  - Lesson 11.5: Secure query prevents query injection by using prepared statements.
-  - Lesson 11.6: A complete project using session, cookie, database, retrieve/update/ delete DB records.
-    - A README.sql file contains sample database you may use to practice examples.
+  - [Lesson 11.1](lab11/11.01.basic-mysql-connection): Basic mysql connection (using mysqli)
+  - [Lesson 11.2](lab11/11.02.mysql-connection): MySQL connection error handling using `try-catch`.
+  - [Lesson 11.3](lab11/11.03.mysql-connection-oop): OOP connection.
+  - [Lesson 11.4](lab11/11.04.mysql-connection-oop): Universal PHP connection `PDO` (Oracle, MySQL, MsSQL, ..).
+  - [Lesson 11.5](lab11/11.05.mysql-statement): Secure query prevents query injection by using prepared statements.
+  - [Lesson 11.6](lab11/11.06.advanced-usage): A complete project using session, cookie, database, retrieve/update/ delete DB records.
+  - A [README.sql](lab11/README.sql) file contains sample database you may use to practice examples.
 ### Ajax
 - [Lab 12](lab12)
-  - Lesson 12.1: Basic Ajax connection
-  - Lesson 12.2: Request and parse XML file
-  - Lesson 12.3: Generate XML file using PHP and request it by Ajax
-  - Lesson 12.4: Request and parse JSON file
-  - Lesson 12.5: Generate JSON file using PHP and request it by Ajax
-  - Lesson 12.6: Send POST request via Ajax
-    - DEMO: A complete project that handle Ajax and interacting with server.
+  - [Lesson 12.1](lab12/12.01.basic-ajax): Basic Ajax connection
+  - [Lesson 12.2](lab12/12.02.parse-xml-document): Request and parse XML file
+  - [Lesson 12.3](lab12/12.03.parse-generated-xml): Generate XML file using PHP and request it by Ajax
+  - [Lesson 12.4](lab12/12.04.parse-json-document): Request and parse JSON file
+  - [Lesson 12.5](lab12/12.05.parse-generated-json): Generate JSON file using PHP and request it by Ajax
+  - [Lesson 12.6](lab12/12.06.send-request): Send POST request via Ajax
+  - [DEMO](lab12/Demo): A complete project that handle Ajax and interacting with server.
