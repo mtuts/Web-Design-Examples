@@ -1,0 +1,21 @@
+
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5) url("images/loader.png") center center no-repeat;
+  z-index: 10;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.hidden {
+  display: none;
+}

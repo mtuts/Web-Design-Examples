@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XML Parser</title>
+  <style>
+    #page-contents {
+      width: 800px;
+      margin: 0 auto;
+    }
+    .nav {
+      text-align: center;
+      border-bottom: 3px dashed #444;
+      padding-bottom: 10px;
+      margin-top: 15px;
+    }
+
+    .nav button {
+      border: 1px solid #125698;
+      background-color: #569ADC;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    .nav button:active {
+      background-color: #78BCFE;
+    }
+
+    #output,
+    #file-contents {
+      border: 1px dotted #333;
+      margin-top: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    #file-contents {
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+<div id="page-contents">
+  <div class="nav">
+    <button id="plain-btn" data-file="plain.txt">Plain Text</button>
+    <button id="xml-btn" data-file="sample.xml">XML</button>
+    <button id="json-btn" data-file="sample.json">JSON</button>
+    <button id="html-btn" data-file="sample.html">HTML</button>
+    <button id="any-btn" data-file="sample.zip">Any</button>
+  </div>
+
+  <div id="output">file contents display here</div>
+
+  <textarea name="file-contents" id="file-contents" cols="100" rows="40" title="file content" readonly></textarea>
+</div>
+
+<script type="text/javascript">
+
+  window.onload = function () {
+    var btns = document.querySelectorAll('button'), i;
+
+    for (i = 0; i < btns.length; ++i) {
+
+      btns[i].addEventListener('click', function () {
+        var filename = this.getAttribute('data-file');
+        load_file(filename);
+      });
+    }
+
+  };
+
+  function load_file(filename) {
+    var file_content = document.querySelector('#file-contents');
+    var output = document.querySelector('#output');
+
+
+    // using Ajax to request file from server
+
+    var xh;
+    if (window.XMLHttpRequest) {
+      // check browser support IE7+, firefox, Chrome, Opera, Safari
+      xh = new XMLHttpRequest();
+    } else {
+      xh = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    xh.onreadystatechange = function() {
+      if (xh.readyState == XMLHttpRequest.DONE) {
+        if (xh.status == 200) {
+          file_content.value = xh.responseText;
+          output.innerHTML = xh.responseText;
+        } else if (xh.status == 400) {
+          alert("There was an error 400");
+        } else {
+          alert("Something else other than 200 was returned");
+        } }
+    };
+    xh.open("GET", filename, true);
+    xh.send();
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<slides>
+    <subject>Introduction to Web Development</subject>
+    <author>Albert Romeu</author>
+    <author>Jorge Sanz</author>
+    <slide index="1">
+        <title>Agenda</title>
+        <content>
+            <enumerate type="numbers">
+                <item>HTML</item>
+                <item>CSS</item>
+                <item>JavaScript</item>
+            </enumerate>
+        </content>
+    </slide>
+    <slide index="2">
+        <title>Tools</title>
+        <content>
+            <points>
+                <item>A text editor</item>
+                <item>A browser</item>
+                <item>A web server</item>
+            </points>
+        </content>
+    </slide>
+    <slide index="3">
+        <title>HTML</title>
+        <content>
+            <points>
+                <item>Hyper Text Markup Language</item>
+                <item>Standard for writing web pages</item>
+                <item>HTML Tags - 1991</item>
+                <item>HTML 2.0 - 1995</item>
+                <item>HTML 4.0 - 1997</item>
+                <item>HTML 5.0 - 2014</item>
+            </points>
+        </content>
+    </slide>
+    <slide index="4">
+        <title> WHAT IS HTML?</title>
+        <content>
+            <paragraph>
+                WEB PAGES that run in a web browser (client side)
+            </paragraph>
+            <photo source="images/example.png" />
+        </content>
+    </slide>
+    <source>http://slides.com/alrocar/intro-web-dev/fullscreen</source>
+</slides>

@@ -1,0 +1,104 @@
+#main-content {
+  margin: 0 auto;
+  width: 730px;
+  border: 1px solid black;
+  padding: 25px 0;
+  border-radius: 20px;
+  background-color: #aaa;
+  position: relative;
+}
+#load-slides {
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  border: none;
+  background: url("images/update.png") center center no-repeat;
+  width: 25px;
+  height: 25px;
+  cursor: pointer ;
+}
+#load-slides:active {
+  right: 36px;
+  top: 26px;
+}
+
+#header {
+  color:#444;
+  margin: 0;
+  padding: 10px 0 20px;
+  text-align: center;
+}
+
+.slide {
+  height: 460px;
+  width: 680px;
+  background-color: #fff9e6;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.slide h2 {
+  text-align: center;
+  padding: 25px 10px;
+  background-color: #125698;
+  color: #fff9e6;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.slide > div {
+  font-size: 20px;
+}
+
+.slide ul li,
+.slide ol li {
+  line-height: 40px;
+}
+
+.nav {
+  text-align: center;
+  position: relative;
+}
+
+.nav .authors {
+  color:#125698;
+}
+
+.nav button {
+  position: absolute;
+  top: -5px;
+  box-shadow: 2px 2px 10px black;
+  background-color: #78BCFE;
+  color:#000055;
+  border: none;
+  line-height: 30px;
+  width: 90px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  transition: top 100ms ease-in, box-shadow 100ms ease-in, left 100ms ease-in, right 100ms ease-in;
+}
+.nav button:first-of-type {
+  left: 30px;
+}
+.nav button:last-of-type {
+  right: 30px;
+}
+
+.nav button:active {
+  box-shadow: 0 0 2px black;
+  top: -3px;
+}
+.nav button:active:first-of-type {
+  left: 32px;
+}
+.nav button:active:last-of-type {
+  right: 28px;
+}
+
+.hidden {
+  display: none;
+}
