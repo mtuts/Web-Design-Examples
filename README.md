@@ -2,7 +2,7 @@
 A step by step examples about designing a website using [HTML](#html), [CSS](#css), JS, AJax, PHP and MySQL
 
 ## Contents
-### HTML {#html}
+### HTML
 - Lab 1
   - Lesson 1.1: Plain text file with extension (.html)
   - Lesson 1.2: A text file contains HTML tags
