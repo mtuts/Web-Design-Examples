@@ -1,0 +1,31 @@
+body {
+  background-color: antiquewhite;
+}
+
+#page-content {
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px 20px;
+  border: 1px solid darkgray;
+  border-radius: 15px;
+}
+
+.mybox1 {
+  height: 600px;
+  padding: 20px;
+
+  border: 15px solid #FFF;
+
+  box-shadow: 0 0 10px #000, 0 0 30px #000 inset;
+
+  border-radius: 15px;
+
+  background:
+      url(images/kau-logo.png) top+110px center no-repeat,
+      url("images/sky.jpg") top -100px left no-repeat,
+      url(images/sea.jpg) bottom left no-repeat;
+}
+
+
+
+

@@ -1,0 +1,42 @@
+body {
+  background-color: lightyellow;
+}
+
+div p {
+  color: red;
+}
+
+div p.cpit {
+  color: green;
+}
+p.cpit {
+  color: blue;
+}
+
+div #main-paragraph {
+  color: darkslateblue;
+}
+
+#main-paragraph {
+  color: chocolate;
+}
+
+p {
+  color: #696969;
+}
+
+p + p {
+  color: #cc9900;
+}
+
+a {
+  transition-property: font-size;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+a:hover {
+  font-size: 40px;
+  text-decoration: none;
+  color: mediumvioletred;
+}

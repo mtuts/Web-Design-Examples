@@ -1,0 +1,29 @@
+.mybox1 {
+  border: 1px solid #982213;
+  margin: 10px;
+  padding: 20px;
+}
+
+.mybox2 {
+  border: 4px dashed #529901;
+  padding: 20px 10px;
+}
+
+.mybox3 {
+  border: 4px solid #529901;
+  padding: 20px 10px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.an-egg {
+  background-color: antiquewhite;
+  border: 1px solid #696969;
+  width: 126px;
+  height: 180px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 28px;
+}

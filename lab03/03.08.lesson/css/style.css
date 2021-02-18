@@ -1,0 +1,41 @@
+body {
+  /*background-image: url('images/circuit-board.jpg');*/
+  /*background-position: center center;*/
+  /*background-repeat: repeat-y;*/
+  /*background-color: darkblue;*/
+  /*background-size: 60%;*/
+
+  background: darkblue center center/60% repeat-y url("images/circuit-board.jpg");
+}
+
+#page-content {
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px 20px;
+  background: wheat left top repeat url("images/cool-line.png");
+}
+
+.mybox1 {
+  height: 200px;
+  position: relative;
+  color: #FFF;
+  text-shadow: 0 0 5px #000;
+  z-index: 0;
+  padding: 20px;
+}
+
+.mybox1:after {
+  content: '';
+  background: left top/10% repeat url("images/snowflake-tile.jpg");
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+
+
+

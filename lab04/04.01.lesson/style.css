@@ -1,0 +1,36 @@
+body {
+  background-color: bisque;
+}
+
+p {
+  color: slategrey;
+}
+
+a:hover {
+  font-size: 40px;
+  text-decoration: none;
+  color: mediumvioletred;
+}
+
+a:link {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #921738;
+}
+
+input:focus {
+  /*box-shadow: 0 0 5px black;*/
+  background-color: lightseagreen;
+}
+
+input[type=text]:focus {
+  /*box-shadow: 0 0 5px black;*/
+  background-color: lightseagreen;
+}
+
+textarea:focus {
+  background-color: lightseagreen;
+}

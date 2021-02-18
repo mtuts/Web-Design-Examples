@@ -1,0 +1,47 @@
+body {
+  background-color: lightblue;
+  font-family: fantasy, Arial, Tahoma;
+  font-size: 20px;
+}
+
+p {
+  color: #921738;
+}
+
+span {
+  font-weight: bold;
+  color: blue;
+}
+
+h1 {
+  color: navy;
+}
+
+h2 {
+  font-family: Arial, Tahoma;
+  font-variant: small-caps;
+}
+
+a {
+  font-family: Tahoma;
+  font-style: italic;
+  color: rgb(255, 77, 34);
+  text-decoration: none;
+}
+
+.mystyle1 {
+  text-transform: uppercase;
+}
+
+.mystyle2 {
+  font-family: "Times New Roman", Tahoma, serif;
+  letter-spacing: 0.2em;
+  word-spacing: 10px;
+  line-height: 2em;
+  text-align: center;
+}
+
+
+
+
+

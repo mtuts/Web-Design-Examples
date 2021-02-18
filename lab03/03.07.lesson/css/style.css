@@ -1,0 +1,16 @@
+
+.mybox1 {
+  padding-right: 200px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-image: url("images/img_tree.png");
+}
+
+#page-content {
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px 20px;
+}
+
+
+

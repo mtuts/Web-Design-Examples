@@ -1,0 +1,38 @@
+body {
+  background-color: lightgreen;
+  font-size: 150%;
+}
+
+#main-content {
+  /* step 1 */
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  /*margin: 10px 20px 30px 40px;*/ /* step 2 */
+  /*margin: 0 auto; !* step 3, after remove previous property *!*/
+  width: 700px;   /* step 2 */
+  border: 1px solid black;
+  padding: 0 20px;
+}
+
+h1 {
+  background-color: lightgray;
+  padding: 30px;
+}
+
+h2 {
+  color: purple;
+}
+
+p {
+  color: purple;
+}
+
+.mystyle2 {
+  color: purple;
+}
+/*  optimize selection (grouping)
+h2, p, .mystyle2 {
+  color: purple;
+}*/

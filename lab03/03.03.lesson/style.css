@@ -1,0 +1,23 @@
+body {
+  background-color: lightblue;
+}
+
+p {
+  color: #921738;
+}
+
+span {
+  font-weight: bold;
+  color: blue;
+}
+
+h1 {
+  color: navy;
+}
+
+a {
+  font-family: Tahoma;
+  font-style: italic;
+  color: rgb(255, 77, 34);
+  text-decoration: none;
+}

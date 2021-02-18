@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Specificity</h1>
+<p>
+  If you two (or more) conflicting CSS rules that point to the same element, there are some basic rules that a browser
+  follows to determine which one is most specific and therefore wins out.
+</p>
+
+<div>
+  <p>
+    This is a paragraph within a DIV.
+  </p>
+  <p>
+    Adjacent paragraph will be set by CSS adjacent selector.
+  </p>
+  <span>An span</span>
+  <p>
+    Adjacent paragraph will be set by CSS adjacent selector.
+  </p>
+</div>
+
+<div>
+  <p class="cpit">
+    A paragraph with a class specified!
+  </p>
+</div>
+
+<div>
+  <p class="cpit" id="main-paragraph">
+    A paragraph with a class and ID specified!
+  </p>
+</div>
+<a href="read-more.html">Read More</a>
+
+
+</body>
+</html>
