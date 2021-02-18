@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Blog</title>
+</head>
+<body>
+
+  <h1>Writing Well Organized Form</h1>
+
+  <form action="02.form-testing.php" method="post">
+
+    <p>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" value="" placeholder="Enter your first name" required>
+    </p>
+
+    <p>
+      <label>Last Name
+      <input type="text" name="last-name" value="" placeholder="Enter your last name">
+      </label>
+    </p>
+
+    <p>
+      Gender
+      <label>
+        <input type="radio" name="gender" value="male" checked>Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female">Female
+      </label>
+    </p>
+
+    <p>
+      What your interest?
+
+      <br>
+
+      <label>
+        <input type="checkbox" name="interest" value="reading">Reading
+      </label>
+
+      <br>
+
+      <label>
+        <input type="checkbox" name="interest" value="fighting">Fighting
+      </label>
+
+      <br>
+
+      <label>
+        <input type="checkbox" name="interest" value="inventing" checked>Inventing
+      </label>
+    </p>
+
+    <p>
+      <label>City
+        <select name="city">
+          <option value="0">None</option>
+          <option>Makkah</option>
+          <option selected>Madinah</option>
+          <option>Jeddah</option>
+        </select>
+      </label>
+    </p>
+
+    <div>
+      <label>
+        My Photo
+        <input type="file" name="image" >
+      </label>
+    </div>
+
+    <p>
+      <label>Note
+      <textarea name="note" rows="8" cols="40"></textarea>
+      </label>
+    </p>
+
+    <div>
+      <input type="submit" value="Send My Info">
+      <button type="reset">Reset</button>
+    </div>
+
+  </form>
+</body>
+</html>
