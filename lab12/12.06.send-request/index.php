@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Send POST Request using Ajax </title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
