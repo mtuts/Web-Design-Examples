@@ -69,10 +69,50 @@ A step by step examples about designing a website using HTML, CSS, JS, AJax, PHP
     - LocalStorage: using browser `localStorage` as our Database storage. 
   - Lesson 7.2: Keyboard handler
   - Lesson 7.3: Another usage of `setInterval` and getting window size information.
-  - Lesson 7.4: Introduction to HTML5 canvas, an advance drawing tools (canvas: replace the usage of Macromedia Flash where canvas killed flash since HTML5 released)
+  - Lesson 7.4: Introduction to HTML5 canvas, an advance drawing tools (`canvas`: replace the usage of Macromedia Flash where canvas killed flash since HTML5 released)
 
   - JavaScript useful usages examples: (lab instructor could show students the possibility of JavaScript which help them to invent new project ideas from these examples)
     - **AddressBook**: Object-Oriented programming that include form validator, regular expression, manage database (browser localStorage) and much more.
     - **DrawApp**: Also OOP application provides drawing tools to draw line, circle, rectangle, and square.
     - **Game**: an interactive game that records points detect when user complete basic level. Students could learn from this example how to interact with keyboard.
     - **Painter**: a complete application similar to Windows Paint application done in less than 190 lines using JavaScript and HTML5 canvas only to draw several shapes with different setting and colors. Also, it provides how to save canvas image as PNG. Students could learn from this example how to handle mouse and keyboard events such as mouse-move, mouse-down, mouse-up, and keyup.
+
+### PHP
+- Lab 8
+  - Lesson 8.1: Introduction to creating simple PHP file and print methods
+  - Lesson 8.2: define PHP block within HTML code
+  - Lesson 8.3: Defining variables, concatenate operator, and arithmetic operations
+  - Lesson 8.4: if-else-statement, short if-statement, switch, random function.
+  - Lesson 8.5: loops, breaking out of loop
+  - Lesson 8.6: Function and variables scopes
+- Lab 9
+  - Lesson 9.1: Array declaration and concept of dictionary.
+  - Lesson 9.2: An example with undeclared function in order to see what will happen to deal with errors
+  - Lesson 9.3: Corrected version of lesson 9.2
+  - Lesson 9.4: Concept of code reuse and how to deal with several files.
+  - Lesson 9.5: Classes declaration basics
+  - Lesson 9.6: More examples in OOP.
+    - SingletonDemo: an implementation of Singleton Design Pattern in order to learn usage of static attribute and method within the class and outside it. Also, how to prevent creating more than one instance of class.
+- Lab 10
+  - Lesson 10.1: Basic Form handler.
+  - Lesson 10.2: Using image as submit button in order to know where user click by sending `x` and `y`.
+  - Lesson 10.3: Advanced Form handler, and file I/O read and write from files.
+  - Lesson 10.4: Using JSON to store data into file and read from file using json decoder.
+  - Lesson 10.5: Cookies and Session
+  - Lesson 10.6: File upload, handling file upload and list files from a folder
+- Lab 11
+  - Lesson 11.1: Basic mysql connection (using mysqli)
+  - Lesson 11.2: MySQL connection error handling using `try-catch`.
+  - Lesson 11.3: OOP connection.
+  - Lesson 11.4: Universal PHP connection PDO (Oracle, MySQL, MsSQL, ..).
+  - Lesson 11.5: Secure query prevents query injection by using prepared statements.
+  - Lesson 11.6: A complete project using session, cookie, database, retrieve/update/ delete DB records.
+    - A README.txt file contains sample database you may use to practice examples.
+### Ajax
+  - Lesson 12.1: Basic Ajax connection
+  - Lesson 12.2: Request and parse XML file
+  - Lesson 12.3: Generate XML file using PHP and request it by Ajax
+  - Lesson 12.4: Request and parse JSON file
+  - Lesson 12.5: Generate JSON file using PHP and request it by Ajax
+  - Lesson 12.6: Send POST request via Ajax
+    - DEMO: A complete project that handle Ajax and interacting with server.
