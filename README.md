@@ -3,7 +3,7 @@ A step by step examples about designing a website using [HTML](#html), [CSS](#cs
 
 ## Contents
 ### HTML
-- Lab 1
+- [Lab 1](lab01)
   - Lesson 1.1: Plain text file with extension (.html)
   - Lesson 1.2: A text file contains HTML tags
   - Lesson 1.3: Minimum HTML required tags to start with.
