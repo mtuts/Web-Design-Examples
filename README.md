@@ -4,30 +4,30 @@ A step by step examples about designing a website using [HTML](#html), [CSS](#cs
 ## Contents
 ### HTML
 - [Lab 1](lab01)
-  - Lesson 1.1: Plain text file with extension (.html)
-  - Lesson 1.2: A text file contains HTML tags
-  - Lesson 1.3: Minimum HTML required tags to start with.
-  - Lesson 1.4: Multilines
+  - [Lesson 1.1](lab01/01.01.lesson.html): Plain text file with extension (.html)
+  - [Lesson 1.2](lab01/01.02.lesson.html): A text file contains HTML tags
+  - [Lesson 1.3](lab01/01.03.lesson.html): Minimum HTML required tags to start with.
+  - [Lesson 1.4](lab01/01.04.lesson.html): Multilines
     - Browser does not display new line in a text file as its, it appear in single line.
     - Using `<br>` tag to break the line
     - Another way to have several lines by using paragraph tag `<p>`
     - Using text formatting such italic tag `<em>`, bold `<strong>` and some other tags which have no effect unless you apply CSS.
-  - Lesson 1.5: Introduction to Heading tags `<h1> ... <h6>`
-  - Lesson 1.6: Unordered list `<ul>` and ordered lists.
-  - Lesson 1.7: Introduction to Links and website navigation:
+  - [Lesson 1.5](lab01/01.05.lesson.html): Introduction to Heading tags `<h1> ... <h6>`
+  - [Lesson 1.6](lab01/01.06.lesson.html): Unordered list `<ul>` and ordered lists.
+  - [Lesson 1.7](lab01/01.07.lesson.html): Introduction to Links and website navigation:
     - Basic usage (inline)
     - Break line to display links into several lines.
     - Using paragraph
     - Using unordered list.
-  - Lesson 1.8: Complete webpage with reasonable layout. Also, describe the usage of ID and classes.
+  - [Lesson 1.8](lab01/01.08.lesson.html): Complete webpage with reasonable layout. Also, describe the usage of ID and classes.
 
 - [Lab 2](lab02)
-  - Lesson 2.1: Image tag `<img>` and special characters
-  - Lesson 2.2: Tables
-  - Lesson 2.3: Simple form
-  - Lesson 2.4: Using label with simple form
-  - Lesson 2.5: Advanced form
-  - Lesson 2.6: iframe, include small window within a webpage.
+  - [Lesson 2.1](lab02/02.01.lesson.html): Image tag `<img>` and special characters
+  - [Lesson 2.2](lab02/02.02.lesson.html): Tables
+  - [Lesson 2.3](lab02/02.03.lesson.html): Simple form
+  - [Lesson 2.4](lab02/02.04.lesson.html): Using label with simple form
+  - [Lesson 2.5](lab02/02.05.lesson.html): Advanced form
+  - [Lesson 2.6](lab02/02.06.lesson.html): iframe, include small window within a webpage.
 
 ### CSS
 - [Lab 3](lab03)
@@ -107,7 +107,7 @@ A step by step examples about designing a website using [HTML](#html), [CSS](#cs
   - Lesson 11.4: Universal PHP connection `PDO` (Oracle, MySQL, MsSQL, ..).
   - Lesson 11.5: Secure query prevents query injection by using prepared statements.
   - Lesson 11.6: A complete project using session, cookie, database, retrieve/update/ delete DB records.
-    - A README.txt file contains sample database you may use to practice examples.
+    - A README.sql file contains sample database you may use to practice examples.
 ### Ajax
 - [Lab 12](lab12)
   - Lesson 12.1: Basic Ajax connection
