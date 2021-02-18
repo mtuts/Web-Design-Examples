@@ -7,18 +7,18 @@ A step by step examples about designing a website using [HTML](#html), [CSS](#cs
   - [Lesson 1.1](lab01/01.01.lesson.html): Plain text file with extension (.html)
   - [Lesson 1.2](lab01/01.02.lesson.html): A text file contains HTML tags
   - [Lesson 1.3](lab01/01.03.lesson.html): Minimum HTML required tags to start with.
-  - [Lesson 1.4](lab01/01.04.lesson.html): Multilines
-    - Browser does not display new line in a text file as its, it appear in single line.
-    - Using `<br>` tag to break the line
-    - Another way to have several lines by using paragraph tag `<p>`
-    - Using text formatting such italic tag `<em>`, bold `<strong>` and some other tags which have no effect unless you apply CSS.
+  - Lesson 1.4: Multilines
+    - Browser does not display new line in a text file as its, it appear in single line. [example](lab01/01.04a.lesson.html)
+    - Using `<br>` tag to break the line [example](lab01/01.04b.lesson.html)
+    - Another way to have several lines by using paragraph tag `<p>` [example](lab01/01.04c.lesson.html)
+    - Using text formatting such italic tag `<em>`, bold `<strong>` and some other tags which have no effect unless you apply CSS. [example](lab01/01.04d.lesson.html)
   - [Lesson 1.5](lab01/01.05.lesson.html): Introduction to Heading tags `<h1> ... <h6>`
   - [Lesson 1.6](lab01/01.06.lesson.html): Unordered list `<ul>` and ordered lists.
-  - [Lesson 1.7](lab01/01.07.lesson.html): Introduction to Links and website navigation:
-    - Basic usage (inline)
-    - Break line to display links into several lines.
-    - Using paragraph
-    - Using unordered list.
+  - Lesson 1.7: Introduction to Links and website navigation:
+    - Basic usage (inline) [example](lab01/01.07a.lesson.html)
+    - Break line to display links into several lines. [example](lab01/01.07b.lesson.html)
+    - Using paragraph [example](lab01/01.07c.lesson.html)
+    - Using unordered list. [example](lab01/01.07d.lesson.html)
   - [Lesson 1.8](lab01/01.08.lesson.html): Complete webpage with reasonable layout. Also, describe the usage of ID and classes.
 
 - [Lab 2](lab02)
