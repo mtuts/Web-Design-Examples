@@ -1,8 +1,8 @@
 # Web Design Learn by Example
-A step by step examples about designing a website using HTML, CSS, JS, AJax, PHP and MySQL
+A step by step examples about designing a website using [HTML](#html), [CSS](#css), JS, AJax, PHP and MySQL
 
 ## Contents
-### HTML
+### HTML {#html}
 - Lab 1
   - Lesson 1.1: Plain text file with extension (.html)
   - Lesson 1.2: A text file contains HTML tags
@@ -29,7 +29,7 @@ A step by step examples about designing a website using HTML, CSS, JS, AJax, PHP
   - Lesson 2.5: Advanced form
   - Lesson 2.6: iframe, include small window within a webpage.
 
-### CSS
+### CSS {#css}
 - Lab 3
   - Lesson 3.1: Inline CSS
   - Lesson 3.2: Internal CSS
@@ -104,7 +104,7 @@ A step by step examples about designing a website using HTML, CSS, JS, AJax, PHP
   - Lesson 11.1: Basic mysql connection (using mysqli)
   - Lesson 11.2: MySQL connection error handling using `try-catch`.
   - Lesson 11.3: OOP connection.
-  - Lesson 11.4: Universal PHP connection PDO (Oracle, MySQL, MsSQL, ..).
+  - Lesson 11.4: Universal PHP connection `PDO` (Oracle, MySQL, MsSQL, ..).
   - Lesson 11.5: Secure query prevents query injection by using prepared statements.
   - Lesson 11.6: A complete project using session, cookie, database, retrieve/update/ delete DB records.
     - A README.txt file contains sample database you may use to practice examples.
