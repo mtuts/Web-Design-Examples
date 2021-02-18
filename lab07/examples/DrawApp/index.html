@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript and DOM</title>
+  <link rel="stylesheet" href="styles/setting.css">
+</head>
+<body>
+
+<div id="window">
+
+  <canvas id="my-canvas" width="600" height="400"></canvas>
+</div>
+
+<script type="text/javascript" src="js/draw-app.js"></script>
+<script language="JavaScript" type="text/javascript">
+
+  /**
+   * introduction into Event
+   */
+
+  var draw_app;
+
+  window.onload = function () {
+    draw_app = new DrawApp('#my-canvas');
+    draw_app.init();
+
+    draw_house();
+
+    window.addEventListener('resize', function () {
+      draw_house();
+    });
+  };
+
+  var draw_house = function () {
+    var w, h, s = 0.7, shift_y, cloud_x, cloud_y;
+    w = draw_app.board.clientWidth;
+    h = draw_app.board.clientHeight;
+
+    shift_y = h - 500;
+
+    draw_app.addRect(0, 0, w, h, 0, null, 'skyblue');
+    draw_app.addRect(w/2 + s * 110, s * 90 + shift_y, s * 90, s * 180, 0, null, 'brown');
+    draw_app.addSquare(w/2 - s * 20, s * 75 + shift_y, s * 400, 45, null, 'white');
+    draw_app.addRect(w/2, s * 60 + shift_y, s * 400, s * 30, 45, null, 'brown');
+    draw_app.addRect(w/2, s * 60 + shift_y, s * 430, s * 30, 135, null, 'brown');
+    draw_app.addRect(w/2 - s * 300, s * 360 + shift_y, s * 558, s * 300, 0, null, 'white');
+    draw_app.addRect(w/2 - s * 155 / 2, s * 480 + shift_y, s * 120, s * 180, 0, null, 'brown'); // Door
+
+    var window_size = 100;
+    var i, list = [{x: 230, y: 340}, {x: -90, y: 340}, {x: window_size/2 + 20, y: 180}];
+
+    for (i = 0; i < list.length; ++i) {
+      draw_app.addRect(w / 2 - s * list[i].x, s * list[i].y + shift_y, s * window_size, s * window_size, 0, '#555', null, 5); // window
+      draw_app.addLine(w / 2 - s * (list[i].x - window_size / 2), s * list[i].y + shift_y, w / 2 - s * (list[i].x - window_size / 2), s * list[i].y + shift_y + s * window_size, '#555', 5); // window
+      draw_app.addLine(w / 2 - s * list[i].x, s * (list[i].y + window_size / 2) + shift_y, w / 2 - s * (list[i].x - window_size), s * (list[i].y + window_size / 2) + shift_y, '#555', 5); // window
+    }
+
+    list = [{x: -500, y: 0}, {x: -360, y: +210}, {x: -120, y: 50}, {x: 190, y: 100}, {x: 490, y: 50}];
+
+    for (i = 0; i < list.length; ++i) {
+      cloud_x = list[i].x * s;
+      cloud_y = list[i].y * s;
+      draw_app.addCircle(cloud_x + w/2, cloud_y + 90, 60, null, 'white');
+      draw_app.addCircle(cloud_x + w/2 + 60, cloud_y + 90, 50, null, 'white');
+      draw_app.addCircle(cloud_x + w/2 - 50, cloud_y + 70, 40, null, 'white');
+      draw_app.addCircle(cloud_x + w/2 + 20, cloud_y + 50, 60, null, 'white');
+    }
+
+  };
+
+
+
+
+
+</script>
+</body>
+</html>

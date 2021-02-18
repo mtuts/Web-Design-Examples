@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript</title>
+</head>
+<body>
+
+
+<script language="JavaScript" type="text/javascript">
+  /**
+   * Defining a function
+   */
+
+  var square = function (x) {
+    return x * x;
+  };
+
+  console.log(square(12)); // 144
+
+
+  var makeNoise = function () {
+    console.log("Pling!");
+  };
+
+  makeNoise();
+
+
+  function power(base, exponent) {
+    var result = 1;
+    for (var count = 0; count < exponent; ++count)
+      result *= base;
+
+    return result;
+  }
+
+  console.log(power(2, 10)); // 1024
+
+
+  /**
+   * Parameters and scopes
+   */
+  var x = "outside";
+
+  var f1 = function () {
+    var x = "inside f1";
+  };
+  f1();
+  console.log(x); // outside
+
+  var f2 = function () {
+    x = "inside f2";
+  };
+
+  f2();
+
+  console.log(x); // inside f2
+
+
+  /**
+   * anonymous function
+   */
+  var with_a_callback = function (x, call_back) {
+    if (typeof call_back == 'function')
+      call_back(x);
+  };
+
+  with_a_callback(10, function (y) {
+    console.log(y);
+  });
+
+
+</script>
+</body>
+</html>

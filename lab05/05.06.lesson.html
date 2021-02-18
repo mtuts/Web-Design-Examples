@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript</title>
+</head>
+<body>
+
+
+<script language="JavaScript" type="text/javascript">
+  /**
+   * alert
+   */
+
+  window.alert("Hello, JavaScript from alert");
+  alert("Hello, JavaScript from alert");
+
+  /**
+   * Prompt
+   */
+  window.prompt("Type something here");
+  prompt("Type something here");
+
+  var b_year = prompt("Enter your birth year:");
+  var current_year = new Date().getFullYear();
+  var age = current_year - b_year;
+
+  alert('Your age is ' + age);
+  console.log("Your age is ", age);
+
+  /**
+   * Confirm
+   */
+
+  window.confirm("Are you sure want show me!");
+  confirm("Just to confirm, are you sure to do that :)");
+
+  if (confirm('I will ask you again, do you want see an alert?')) {
+    alert("Here you go. I'm an alert message!");
+  } else {
+    console.log("You canceled confirmation message!");
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+
+#wrapper {
+  margin: 0 auto;
+  width: 800px;
+}
+
+
+table.striped {
+  width: 100%;
+  border-spacing: 0;
+}
+table.striped th, table.striped td {
+  padding: 5px;
+}
+table.striped thead {
+  background-color: #78BCFE;
+}
+table.striped thead th {
+  color: #FFF;
+}
+table.striped tbody tr th, table.striped tbody tr td {
+  border-bottom: 1px solid #ccc;
+}
+table.striped tbody tr:nth-child(even) {
+  background-color: #fff9e6;
+}
+
+td input[type=text],
+td input[type=email] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.sorted_by {
+  background-color: #569ADC;
+  color: #000 !important;
+  position: relative;
+}
+
+.sorted_by.ascending:after {
+  position: absolute;
+  content: '';
+  top: 15%;
+  right: 8%;
+  width: 0;
+  height:0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.sorted_by.descending:after {
+  position: absolute;
+  content: '';
+  top: 40%;
+  right: 8%;
+  width: 0;
+  height:0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+a {
+  color: #569ADC;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 small {
+  font-size: 70%;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.not-valid {
+  box-shadow: 0 0 5px darkred;
+}
+
+.highlight {
+  box-shadow: 0 0 10px red;
+}

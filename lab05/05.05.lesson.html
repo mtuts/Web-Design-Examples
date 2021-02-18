@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript</title>
+</head>
+<body>
+
+
+<script language="JavaScript" type="text/javascript">
+  /**
+   * loop
+   */
+
+  console.log(0);
+  console.log(2);
+  console.log(4);
+  console.log(6);
+  console.log(8);
+  console.log(10);
+  console.log(12);
+
+  var number = 0;
+
+  while (number <= 12) {
+    console.log(number);
+    number = number + 2; // number += 2;
+  }
+
+  for (number = 0; number <= 12; number += 2) {
+    console.log(number);
+  }
+
+  var m = 0;
+  for (var i = 0; i < 100; i++) {
+    m += i;
+  }
+
+  console.log("Sum(0 to 99) = ", m);
+
+  while (m < 2000) {
+    m += 2;
+  }
+  console.log('after while loop m = ' + m);
+
+  do {
+    console.log('You will see this text only once!.');
+  } while (false);
+
+  /**
+   * Breaking out of a loop
+   */
+  for (var current = 20; current < 99999; current++) {
+    if (current % 7 == 0)
+      break;
+  }
+  console.log(current); // 21
+
+</script>
+</body>
+</html>

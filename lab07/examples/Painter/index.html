@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript and DOM</title>
+  <style>
+
+
+    #my-canvas {
+      margin: 0 auto;
+      width: 750px;
+    }
+    #my-canvas canvas {
+      padding: 0;
+      margin: 0;
+      border: 2px solid black;
+    }
+
+    input[type=color] {
+      border: 1px solid black;
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="my-canvas">
+  <div id="menu">
+    <label for="pen-option">
+      <input type="radio" id="pen-option" name="shape" checked value="pen">
+      Pen
+    </label>
+    <label for="line-option">
+      <input type="radio" id="line-option" name="shape" value="line">
+      Line
+    </label>
+    <label for="rectangle-option">
+      <input type="radio" id="rectangle-option" name="shape" value="rectangle">
+      Rectangle
+    </label>
+    <label for="square-option">
+      <input type="radio" id="square-option" name="shape" value="square">
+      Square
+    </label>
+    <label for="circle-option">
+      <input type="radio" id="circle-option" name="shape" value="circle">
+      Circle
+    </label>
+    <label for="text-option">
+      <input type="radio" id="text-option" name="shape" value="text">
+      Text
+    </label>
+
+    &nbsp;
+    |
+    <label for="border-picker-button">
+      Border Color
+      <input id="border-picker-button" type="color" value="#f24879">
+    </label>
+
+    <label for="background-picker-button">
+      BGColor
+      <input id="background-picker-button" type="color" value="#38a494">
+    </label>
+
+    <br>
+    <label>
+      border size
+      <input type="number" name="border-size" value="1" size="2">
+    </label>
+    <label for="stroke-option">
+      <input type="radio" id="stroke-option" name="draw-option" value="stroke" checked>
+      border
+    </label>
+    <label for="fill-option">
+      <input type="radio" id="fill-option" name="draw-option" value="fill">
+      background
+    </label>
+    <label for="both-option">
+      <input type="radio" id="both-option" name="draw-option" value="both">
+      Both
+    </label>
+
+    <button id="clear-button">Clear</button>
+    <a href="#" id="save-button" download="my-drawing.png" target="_blank">Save Image</a>
+  </div>
+  <canvas width="700" height="600"></canvas>
+</div>
+
+<script src="js/painter.js" type="text/javascript"></script>
+</body>
+</html>

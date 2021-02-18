@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript</title>
+</head>
+<body>
+
+
+<h1>Object Oriented Programming</h1>
+
+<script language="JavaScript" type="text/javascript">
+
+  /**
+   * Declaring an object
+   */
+  var profile1 = {
+    name: 'Khalid',
+    age: 22,
+    job: 'Salesman',
+    talk: function () {
+      alert("Hello, I'm " + this.name + " " + this.age + " years old.");
+    }
+  };
+
+  profile1.talk();
+
+  var profile2 = {};
+  profile2.name = 'Khalid';
+  profile2.age = 22;
+  profile2.job = 'Salesman';
+  profile2.talk = function () {
+    alert("Hello, I'm " + this.name + " " + this.age + " years old.");
+  };
+
+  // Using the Object constructor:
+  var profile3 = new Object();
+  profile3.name = 'Khalid';
+  profile3.age = 22;
+  profile3.job = 'Salesman';
+  profile3.talk = function () {
+    alert("Hello, I'm " + this.name + " " + this.age + " years old.");
+  };
+
+  var day1 = {
+    squirrel: false,
+    events: ["work", "touched tree", "pizza", "running", "television"]
+  };
+
+  console.log(day1.squirrel); // false
+  console.log(day1.wolf); // undefined
+
+  day1.wolf = false;
+  console.log(day1.wolf); // false
+
+  var anObject = {left: 1, right: 2};
+  console.log(anObject.left); // 1
+
+  delete anObject.left;
+  console.log(anObject.left); // undefined
+
+  console.log("left" in anObject); // false
+  console.log("right" in anObject); // true
+
+  var obj1 = {value: 10};
+  var obj2 = obj1;
+  var obj3 = {value: 10};
+
+  console.log(obj1 == obj2); // true
+  console.log(obj1 == obj3); // false
+
+  obj1.value = 15;
+  console.log(obj2.value); // 15
+  console.log(obj3.value); // 10
+
+
+  /**
+   * Object-Oriented Programming
+   */
+  var Car = function (make, year) {
+    this.make = make;
+    this.year = year;
+    this.is_turned_on = false;
+  };
+
+  Car.prototype.drive = function () {
+    if (this.is_turned_on)
+      console.log(this.make, this.year, "is driving right now!");
+    else
+      console.log("Start car engine before drive!");
+  };
+
+  Car.prototype.startEngine = function () {
+    this.is_turned_on = true;
+    console.log("Car engine is started!");
+  };
+
+  var c = new Car("VW", "2006");
+
+  c.drive();
+  c.startEngine();
+
+
+  /**
+   * Class inheritance
+   */
+
+  var Person = function (firstName) {
+    this.firstName = firstName;
+  };
+
+  Person.prototype.sayHello = function () {
+    console.log("Hello, I'm " + this.firstName);
+  };
+
+  Person.prototype.walk = function(){
+    console.log("I am walking!");
+  };
+
+  var person1 = new Person("Ali");
+  var person2 = new Person("Fahd");
+
+  person1.sayHello();
+  person2.sayHello();
+
+
+  var Student = function (firstName, subject) {
+    // Call the parent constructor, making sure (using call)
+    // that "this" is set correctly during the call
+    Person.call(this, firstName);
+
+    this.subject = subject;
+  };
+
+  Student.prototype = Object.create(Person.prototype);
+
+  // Set the "constructor" property to refer to Student
+  Student.prototype.constructor = Student;
+
+  // Override the "sayHello" method
+  Student.prototype.sayHello = function(){
+    console.log("Hello, I'm " + this.firstName + ". I'm studying "
+        + this.subject + ".");
+  };
+
+  Student.prototype.sayGoodBye = function(){
+    console.log("Goodbye!");
+  };
+
+  var student1 = new Student("Mohammad", "Information Technology");
+
+  student1.sayHello();
+  student1.walk();
+  student1.sayGoodBye();
+
+
+  // Check that instanceof works correctly
+  console.log(student1 instanceof Person);  // true
+  console.log(student1 instanceof Student); // true
+
+</script>
+</body>
+</html>

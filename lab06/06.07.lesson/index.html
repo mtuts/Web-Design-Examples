@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript and DOM</title>
+  <style>
+
+    table.striped {
+      width: 500px;
+      border-spacing: 0;
+    }
+    table.striped th, table.striped td {
+      padding: 5px;
+    }
+    table.striped thead {
+      background-color: #78BCFE;
+    }
+    table.striped thead th {
+      color: #FFF;
+    }
+    table.striped tbody tr th, table.striped tbody tr td {
+      border-bottom: 1px solid #ccc;
+    }
+    table.striped tbody tr:nth-child(even) {
+      background-color: #fff9e6;
+    }
+
+    td input[type=text],
+    td input[type=email] {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .left {
+      text-align: left;
+    }
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Add To Address Book</h2>
+<form action="#not-implemented" method="post" id="contact-form">
+  <table class="striped">
+    <tbody>
+    <tr>
+      <td class="right">
+        <label for="name-field">Name</label>
+      </td>
+      <td>
+        <input type="text" name="name" id="name-field">
+      </td>
+    </tr>
+    <tr>
+      <td class="right">
+        <label for="email-field">Email</label>
+      </td>
+      <td>
+        <input type="email" name="email" id="email-field">
+      </td>
+    </tr>
+    <tr>
+      <td class="right">
+        <label for="mobile-field">Mobile</label>
+      </td>
+      <td>
+        <input type="tel" name="mobile" id="mobile-field">
+      </td>
+    </tr>
+    <tfoot>
+
+      <tr>
+        <td>
+          &nbsp;
+        </td>
+        <td class="right">
+          <input type="button" value="Add To Table">
+          <!--<input type="submit" value="Add To Table">-->
+        </td>
+      </tr>
+    </tfoot>
+    </tbody>
+  </table>
+
+  <br>
+
+</form>
+
+<h2>Address Book</h2>
+
+<table class="striped">
+  <thead>
+  <tr>
+    <th>#</th>
+    <th class="left">Name</th>
+    <th class="left">Email</th>
+    <th class="center">Mobile</th>
+    <th>Option</th>
+  </tr>
+  </thead>
+  <tbody id="info-list">
+
+  </tbody>
+</table>
+
+<script type="text/javascript">
+  var main_form, text_name, text_email, text_mobile, btn, output;
+
+  window.onload = function () {
+    main_form = document.querySelector('#contact-form');
+    text_name = document.querySelector('input[name=name]');
+    text_email = document.querySelector('input[name=email]');
+    text_mobile = document.querySelector('input[name=mobile]');
+    btn = document.querySelector('input[type=button]');
+    output = document.querySelector('#info-list');
+
+    btn.addEventListener('click', add_handler);
+//    main_form.addEventListener('submit', add_handler);
+  };
+
+
+</script>
+<script src="js/contacts.js" type="text/javascript"></script>
+
+</body>
+</html>

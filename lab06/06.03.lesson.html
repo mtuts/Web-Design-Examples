@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript and DOM</title>
+</head>
+<body>
+
+<h1>JavaScript and DOM (Document Object Model)</h1>
+
+<p id="my-paragraph">Using JavaScript and DOM we able to change page content like this 
+paragraph for example.</p>
+
+<p class="blue">What about a paragraph with class instead of using id?</p>
+<p class="blue">There is another paragraph with same class.</p>
+
+
+
+<script language="JavaScript" type="text/javascript">
+  /**
+   * get an element by id
+   */
+  var elm = document.getElementById('my-paragraph'); // step 1
+
+  console.log(elm); // step 2
+  console.log(typeof elm); // step 3
+  if (elm != null) {  // step 4
+    elm.innerHTML += " We just add this sentence!.";
+  }
+
+  /**
+   * get an element by class name
+   */
+  var i;
+  elm = document.getElementsByClassName('blue');
+
+  console.log(elm);
+  console.log(typeof elm);
+
+  if (elm instanceof HTMLCollection && elm.length > 0) {
+    for (i = 0; i < elm.length; ++i) {
+      console.log(elm[i]);
+      elm[i].innerHTML = "Here you go paragraph #" + (i + 1);
+    }
+  }
+
+
+  /**
+   * get an element by tag name
+   */
+  elm = document.getElementsByTagName('p');
+
+  console.log(elm);
+  console.log(typeof elm);
+
+  if (elm instanceof HTMLCollection && elm.length > 0) {
+    for (i = 0; i < elm.length; ++i) {
+      console.log(elm[i]);
+      elm[i].style = "color: rgb(" + Math.floor(Math.random() * 256) + "," + 
+      Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ");";
+    }
+  }
+
+
+
+
+</script>
+</body>
+</html>

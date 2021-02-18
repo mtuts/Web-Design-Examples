@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript and DOM</title>
+</head>
+<body>
+
+<h2>On load method</h2>
+
+<script language="JavaScript" type="text/javascript">
+
+  /**
+   * When write JavaScript direct to be execute whither internal or external without wait until page fully
+   * loaded, it may fail to execute correctly. It is recommended to write the initial code within
+   * window load which gets call after page finish loading.
+   */
+
+  /**
+   * following declaration is replace anything assigned to load method with new function
+   */
+
+  window.onload = function () {
+    console.log("Hello 1");
+  };
+  window.onload = function () {
+    console.log("Hello 2");
+  };
+
+  /**
+   *  in order to add event to load function you may use following declaration.
+   *  here we use anonymous function.
+   */
+  window.addEventListener('load', function () {
+    console.log("Hello 3");
+  });
+
+  var to_be_use = function () {
+    console.log("Do this ");
+  };
+
+  var to_be_remove = function () {
+    console.log("this will not execute ");
+  };
+
+  window.addEventListener('load', to_be_use);
+  window.addEventListener('load', to_be_remove);
+
+  /**
+   * to remove event listener from an element it require function name, so anonymous method can't be removed
+   */
+  window.removeEventListener('load', to_be_remove);
+
+  /**
+   * Resize window handler
+   */
+
+  window.onresize = function () {
+    console.log("window.innerWidth: ", window.innerWidth);
+    console.log("window.innerHeight: ", window.innerHeight);
+  };
+
+  window.addEventListener('resize', function () {
+    console.log("Another way of track window resize");
+  });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript</title>
+</head>
+<body>
+
+<script language="JavaScript" type="text/javascript">
+  /**
+   * Data set (array)
+   */
+  var listOfNumbers = [2, 3, 5, 7 ,11];
+  console.log(listOfNumbers[1]); // 3
+
+  /**
+   * another way to declare an array using new Array
+   */
+  var list = new Array();
+  list[0] = 'First element';
+  list[1] = 10;
+  list[2] = 43.85;
+  list[3] = true;
+
+  console.log(list); // ['First element', 10, 43.85, true]
+
+  /**
+   * Properties
+   */
+  var x = [1, 8, 3, 7];
+  console.log(x.length); // 4
+
+  /**
+   * Methods
+   */
+  var doh = "Doh";
+  console.log(typeof doh.toUpperCase); // function
+
+  console.log(doh.toUpperCase()); // DOH
+
+  var mack = [];
+  mack.push("Mack");
+  mack.push("the", "Knife");
+
+  console.log(mack); // ["Mack", "the", "Knife"]
+
+  var text = mack.join(" ");
+  console.log(text); // Mack the Knife
+  console.log(mack.pop()); // Knife
+  console.log(mack); // ["Mack", "the"]
+
+  /**
+   * String properties
+   */
+  console.log("coconuts".slice(4, 7)); // nut
+  console.log("coconuts".indexOf("u")); // 5
+
+  console.log("      okay     \n".trim()); // okay
+
+  var s = "abc";
+  console.log(s.length); // 3
+
+  console.log(s.charAt(0)); // a
+
+  console.log(s[1]); // b
+
+  /**
+   * add new method to Array class in order to use Array as Queue data 
+   * structure
+   */
+  Array.prototype.dequeue = function () {
+    if (this.length == 0) return undefined;
+
+    var item = this[0];
+    this.splice(0, 1);
+    return item;
+  };
+
+  var q = [];
+
+  q.push(1);
+  q.push(2);
+  q.push(3);
+  q.push(4);
+
+  console.log(q);
+  console.log(q.dequeue());
+  console.log(q.dequeue());
+  console.log(q.dequeue());
+  console.log(q);
+
+</script>
+</body>
+</html>

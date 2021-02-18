@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript and DOM</title>
+  <style>
+
+    #test-field {
+      width: 400px;
+      box-sizing: border-box;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      border: 1px solid black;
+      padding: 3px;
+      font-size: 13pt;
+    }
+    #output {
+      width: 400px;
+      height: 300px;
+      overflow-y: auto;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+
+<label for="test-field">
+  Test Field
+</label><br>
+<input type="text" id="test-field" name="test-box">
+
+<pre id="output">
+Output goes here
+</pre>
+
+<script language="JavaScript" type="text/javascript">
+
+  /**
+   * introduction into Event
+   */
+
+  var test_field, output;
+
+  window.onload = function () {
+    test_field = document.querySelector('#test-field');
+    output = document.querySelector('#output');
+
+    test_field.focus();
+
+    test_field.addEventListener('keypress', keyboard_handler);
+//    test_field.addEventListener('keydown', keyboard_handler);
+//    test_field.addEventListener('keyup', keyboard_handler);
+  };
+
+  var println = function (line) {
+    output.innerHTML += line + "\n";
+
+    output.scrollTop = output.scrollHeight;
+  };
+
+  var keyboard_handler = function (e) {
+    if (e.charCode != 0) {
+      println("char code: " + e.charCode);
+
+      if (e.charCode < 48 || e.charCode > 57) { // every thing except numbers 0-9
+        e.preventDefault();
+        return false;
+      }
+    } else {
+      switch (e.keyCode) {
+        case 13:
+          println(e.keyCode + ": Enter pressed!");
+          break;
+
+        case 8:
+          println(e.keyCode + ": Backspace pressed!");
+          break;
+
+        case 9:
+          println(e.keyCode + ": Tab pressed!");
+          break;
+
+        case 27:
+          println(e.keyCode + ": ESC pressed!");
+          break;
+
+        case 116:
+          println(e.keyCode + ": F5 pressed! it will be canceled");
+          e.preventDefault();
+          return false;
+
+        case 37:
+          println(e.keyCode + ": Left arrow pressed!");
+          break;
+
+        case 38:
+          println(e.keyCode + ": Up arrow pressed!");
+          break;
+
+        case 39:
+          println(e.keyCode + ": Right arrow pressed!");
+          break;
+
+        case 40:
+          println(e.keyCode + ": Down arrow pressed!");
+          break;
+
+        default:
+          println(e.keyCode + ": Something else pressed!");
+          break;
+      }
+    }
+  };
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

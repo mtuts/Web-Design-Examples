@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript</title>
+</head>
+<body>
+
+
+<script language="JavaScript" type="text/javascript">
+
+  /**
+   * Boolean values
+   */
+
+  console.log(3 > 2); // true
+  console.log(3 < 2); // false
+  console.log("Ali" < "Zio"); // true
+  console.log("Itchy" != "Scratchy"); // true
+  console.log(NaN == NaN); // false, NaN : Not a Number
+  console.log(false == 0); // true
+  console.log(undefined == null); // true
+  console.log(null == 0); // false
+
+  /**
+   * Logical operators
+   */
+  console.log(true && false); // false
+  console.log(true && true); // true
+  console.log(true || false); // true
+  console.log(false || false); // false
+
+  /**
+   * Short-circuiting of logical operator
+   */
+  console.log(null || "user"); // user
+  console.log("Someone" || "user"); // Someone
+
+  /**
+   * if-else-statement
+   */
+  var u, a;
+  var z = 10,
+      k = 29.3,
+      p = 9,
+      q = 2,
+      e = Math.PI;
+
+  if (z > p) {
+    u = true;
+  } else if (k < e) {
+    u = false;
+  }
+
+  console.log("u: ", u);
+
+  if (z - q == e || q >= p) {
+    a = false;
+  } else {
+    a = !u;
+  }
+
+  console.log("a: " + a);
+
+  /**
+   * short if-statement
+   */
+
+  var x = 10;
+  var y = 20;
+
+  z = (x > y ? "x > y" : "x < y");
+
+  console.log("z = ", z);
+
+  x = Math.random() * 100 > 10 && Math.random() * 100 < 20 ? "Picked two numbers b/w 10 and 20" : "Picked different range!";
+
+  console.log("x: ", x);
+
+
+  /**
+   * switch statement
+   */
+
+  x = Math.round(Math.random() * 5);
+
+  switch (x) {
+    case 1:
+      console.log("x equals one!");
+      break;
+
+    case 2:
+      console.log("x equals two!");
+      break;
+
+    case 5:
+      console.log("x equals five!");
+      break;
+
+    default:
+      console.log("switch default case found x = ", x);
+  }
+
+</script>
+</body>
+</html>

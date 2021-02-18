@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript</title>
+</head>
+<body>
+
+
+<script language="JavaScript" type="text/javascript">
+  /**
+   * It is recommended to write JavaScript code on the end of document
+   * before body close tag to ensure that everything within the document 
+   * have been loaded.
+   */
+
+  /**
+   * Defining Variables
+   */
+
+  var x = 123;
+  var y = 8.5;
+  var t = "I am a string within a double quotations";
+  var s = 'I am a string within a single quotations';
+  var c = true;
+  var d = false;
+
+  console.log("x: ", x);
+  console.log("y: ", y);
+  console.log("t: ", t);
+  console.log("s: ", s);
+  console.log("c: ", c);
+  console.log("d: ", d);
+
+  /**
+   * Undefined values
+   *
+   * null, undefined
+   */
+
+
+  /**
+   * Unary operator
+   */
+
+  console.log(typeof 4.5); // number
+  console.log(typeof "x"); // string
+
+  // variable q is not defined yet
+  console.log(typeof q);  // undefined
+
+
+  /**
+   * Automatic type conversion
+   */
+  console.log(8 * null); // 0
+  console.log("5" - 1); // 4
+  console.log("5" + 1); // 51
+  console.log("five" * 2); // NaN
+
+
+</script>
+</body>
+</html>

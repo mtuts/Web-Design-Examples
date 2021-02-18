@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPIT405 - JavaScript Storage</title>
+</head>
+<body>
+
+<h1>Multi-Threading</h1>
+<p>
+  The reality JavaScript does not really have multi-threading capabilities. However, there somehow
+  way to run two or more process in the same time. That can be done using setTimeout or setInterval
+  methods where setTimeout will execute once and setInterval work for ever or until you clear it.
+</p>
+<h2>This span shows current time <span></span></h2>
+
+<h1>Local Storage</h1>
+<p>
+  Storage objects are simple key-value stores, similar to objects, but they stay intact through page loads.
+  The keys and the values are always strings (note that integer keys will be automatically converted to strings,
+  just like what object do). You can access these values like an object, or with the getItem() and setItem()
+  methods.
+</p>
+
+<button>Stop Interval</button>
+
+<script language="JavaScript" type="text/javascript">
+
+  /**
+   * setTimeout
+   */
+
+  var t_id;
+
+  var time_id = setTimeout(function () {
+    console.log(time_id);
+  }, 1000);
+
+  t_id = setTimeout(function () {
+    console.log('This line will not get executed!!!');
+  }, 1000);
+
+  clearTimeout(t_id); // It will stop Timeout if this line get execute before the method get executed.
+
+
+  t_id = setInterval(function () {
+    var q = document.querySelector('h2 span');
+    var t = new Date();
+
+    q.innerHTML = t.getHours() + ':' + t.getMinutes() + ':' + t.getSeconds() + '.' + t.getMilliseconds();
+    q.innerHTML += " | color: " + q.parentNode.style.color;
+  }, 50);
+
+  var get_random_integer = function (from, to) {
+    return from + Math.floor(Math.random() * (to - from + 1));
+  };
+
+  var change_color_randomly = function () {
+    var e = document.querySelector('h2');
+    var red, green, blue;
+
+    red = get_random_integer(0, 255);
+    green = get_random_integer(0, 255);
+    blue = get_random_integer(0, 255);
+    e.style = 'color: rgb(' + red + ', ' + green + ', ' + blue + ');';
+  };
+
+  time_id = setInterval(change_color_randomly, 500);
+
+
+  document.querySelector('button').addEventListener('click', function () {
+    clearInterval(t_id);
+    clearInterval(time_id);
+  });
+
+
+
+  /**
+   * Basic concepts
+   */
+
+  if (typeof localStorage == 'object') { // check if browser is support localStorage
+
+    localStorage.selectedColor = "#123456";  // direct assign
+    localStorage['selectedColor'] = "#123456";  // using array format assigning
+    localStorage.setItem('selectedColor', "#123456"); // using set method
+
+    localStorage.setItem('customer', 'Mohammad');
+    localStorage.setItem('x', 10 * 34.3);
+
+
+    console.log(typeof localStorage.customer, localStorage.customer);
+    console.log(typeof localStorage.getItem('x'), localStorage.x);
+
+
+    if (typeof localStorage.obj == 'string') {
+      try {
+        console.log(JSON.parse(localStorage.obj));
+      } catch (e) {
+        console.log("Line: ", e.lineNumber);
+        console.log("Error Type:", e.name);
+        console.log("Message:", e.message);
+      }
+    } else {
+      console.log("This is first time run!");
+    }
+
+    var products = [];
+
+    products.push({
+      name: 'Pen',
+      price: 10.33,
+      quantity: 30
+    });
+    products.push({
+      name: 'Pencil',
+      price: 2.49,
+      quantity: 100
+    });
+    products.push({
+      name: 'Notebook',
+      price: 14.99,
+      quantity: 83
+    });
+
+    localStorage.setItem('obj', JSON.stringify(products));
+//    localStorage.setItem('obj', 'xxx');
+  }
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
