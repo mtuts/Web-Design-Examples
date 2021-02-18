@@ -1,0 +1,29 @@
+ul.error, ul.success {
+  list-style: none;
+  padding-left: 10px;
+}
+
+ul.error li, ul.success li {
+  padding-left: 25px;
+}
+
+ul.error li {
+  color: darkred;
+  background: left center url("images/CloseCancelSquare.png") no-repeat;
+}
+
+ul.success li {
+  color: darkgreen;
+  background: left center url("images/CheckCircle.png") no-repeat;
+}
+
+table {
+  width: 600px;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+table tr th, table tr td {
+  border: 1px solid black;
+  padding: 5px;
+}

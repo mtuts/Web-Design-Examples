@@ -1,0 +1,240 @@
+* {
+  font-family: Tahoma, Arial, serif;
+}
+body {
+  background-color: #FFF6E6;
+  margin: 0;
+}
+* {
+  color: slategrey;
+}
+
+a {
+  text-decoration: none;
+  color: #78BCFE;
+}
+a:hover {
+  color: #cc9900;
+  border-bottom: 1px solid #cc9900;
+}
+
+#page-content {
+  margin: 20px auto;
+  width: 990px;
+  box-shadow: 0 0 10px #000;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+}
+
+#page-content > .header {
+  background-color: #125698;
+}
+#page-content > .header,
+#page-content > .header h1 {
+  color: #FFF;
+}
+
+#page-content > .header h1 {
+  margin: 0px;
+  padding: 20px 0 0 20px;
+}
+#page-content > .header p {
+  margin: 0;
+  padding-left: 30px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+#page-content > .header ul {
+  list-style: none;
+  padding:0;
+  margin: 10px 20px 0 20px;
+}
+#page-content > .header ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#page-content > .header ul a {
+  text-decoration: none;
+  color: #005;
+  padding: 10px 20px;
+  background-color: #78BCFE;
+  border-radius: 5px 5px 0 0;
+  display: block;
+}
+#page-content > .header ul a.active,
+#page-content > .header ul a:hover {
+  background-color: #FFF;
+  border: none;
+}
+
+
+#main-content {
+  background-color: #FFF;
+  padding: 10px 20px;
+}
+
+
+#main-content .post {
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #888;
+
+}
+#main-content .post > .header h2 {
+  border-bottom: 2px solid #AABBEC;
+  padding-bottom: 5px;
+  color: #7788AA;
+  margin-bottom: 0;
+}
+#main-content .post > .header p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+#main-content .post > .header p span {
+  color: black;
+  font-weight: bold;
+}
+
+.content {
+  padding-top: 10px;
+}
+
+table.striped {
+  width: 100%;
+  border-spacing: 0;
+}
+table.striped th, table.striped td {
+  font-family: "Trebuchet MS", Tahoma, serif;
+  padding: 5px;
+}
+table.striped thead {
+  background-color: #78BCFE;
+}
+table.striped thead th {
+  color: #FFF;
+  white-space: nowrap;
+}
+table.striped tbody tr th, table.striped tbody tr td {
+  border-bottom: 1px solid #ccc;
+}
+table.striped tbody tr:nth-child(even) {
+  background-color: #fff9e6;
+}
+
+.basic-form {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  padding: 10px 20px 20px;
+}
+
+.basic-form h2 {
+  margin: 0 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.basic-form .form-entry {
+  margin-bottom: 10px;
+}
+
+.basic-form .form-entry label:not(.skip-label),
+.basic-form .form-entry input[type=text],
+.basic-form .form-entry input[type=password],
+.basic-form .form-entry input[type=email],
+.basic-form .form-entry input[type=date],
+.basic-form .form-entry input[type=number],
+.basic-form .form-entry input[type=tel],
+.basic-form .form-entry .label,
+.basic-form .form-entry textarea {
+  float: left;
+  display: block;
+  box-sizing: border-box;
+}
+.basic-form .form-entry label:not(.skip-label),
+.basic-form .form-entry .label {
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.basic-form .form-entry input[type=text],
+.basic-form .form-entry input[type=password],
+.basic-form .form-entry input[type=email],
+.basic-form .form-entry input[type=date],
+.basic-form .form-entry input[type=number],
+.basic-form .form-entry input[type=tel],
+.basic-form .form-entry textarea {
+  width: 80%;
+  border: 1px solid #888;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+.basic-form .form-entry textarea {
+  height: 200px;
+  resize: vertical;
+}
+
+.basic-form .form-entry input[type=text]:focus,
+.basic-form .form-entry input[type=password]:focus,
+.basic-form .form-entry input[type=email]:focus,
+.basic-form .form-entry input[type=date]:focus,
+.basic-form .form-entry input[type=number]:focus,
+.basic-form .form-entry input[type=tel]:focus,
+.basic-form .form-entry textarea:focus {
+  box-shadow: 0 0 5px #7AF;
+}
+
+.clear {
+  clear: both;
+  overflow: hidden;
+  height:0;
+}
+
+.basic-form .form-submit input[type=submit],
+.basic-form .form-submit button,
+.basic-form .form-submit a.button {
+  background-color: #78BCFE;
+  border: 1px solid #569ADC;
+  padding: 7px;
+  color: #FFF6E6;
+  font-family: Arial, Tahoma, serif;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.basic-form .form-submit input[type=submit]:active,
+.basic-form .form-submit button:active,
+.basic-form .form-submit a.button:active {
+  background-color: #569ADC;
+}
+
+#page-content > .footer {
+  background-color: dimgrey;
+}
+
+#page-content > .footer  p {
+  margin: 0;
+  color: #fff;
+  font-size: 11px;
+  padding: 15px;
+  text-align: center;
+}
+
+ul.error, ul.success {
+   list-style: none;
+   padding-left: 10px;
+ }
+
+ul.error li, ul.success li {
+  padding-left: 25px;
+}
+
+ul.error li {
+  color: darkred;
+  background: left center url("images/CloseCancelSquare.png") no-repeat;
+}
+
+ul.success li {
+  color: darkgreen;
+  background: left center url("images/CheckCircle.png") no-repeat;
+}
