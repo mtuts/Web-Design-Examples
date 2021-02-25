@@ -1,4 +1,4 @@
-# Web Design Learn by Example
+# Learn Web Design by Example
 A step by step examples about designing a website using [HTML](#html), [CSS](#css), [JS](#JavaScript), [AJax](#Ajax), [PHP and MySQL](#php)
 
 ## Contents
