@@ -79,16 +79,16 @@ A step by step examples about designing a website using [HTML](#html), [CSS](#cs
 
 ### PHP
 - [Lab 8](lab08)
-  - [Lesson 8.1](lab08/08.01.lesson.html): Introduction to creating simple PHP file and print methods
-  - [Lesson 8.2](lab08/08.02.lesson.html): define PHP block within HTML code
-  - [Lesson 8.3](lab08/08.03.lesson.html): Defining variables, concatenate operator, and arithmetic operations
-  - [Lesson 8.4](lab08/08.04.lesson.html): if-else-statement, short if-statement, switch, random function.
-  - [Lesson 8.5](lab08/08.05.lesson.html): loops, breaking out of loop
-  - [Lesson 8.6](lab08/08.06.lesson.html): Function and variables scopes
+  - [Lesson 8.1](lab08/08.01.lesson.php): Introduction to creating simple PHP file and print methods
+  - [Lesson 8.2](lab08/08.02.lesson.php): define PHP block within HTML code
+  - [Lesson 8.3](lab08/08.03.lesson.php): Defining variables, concatenate operator, and arithmetic operations
+  - [Lesson 8.4](lab08/08.04.lesson.php): if-else-statement, short if-statement, switch, random function.
+  - [Lesson 8.5](lab08/08.05.lesson.php): loops, breaking out of loop
+  - [Lesson 8.6](lab08/08.06.lesson.php): Function and variables scopes
 - [Lab 9](lab09)
-  - [Lesson 9.1](lab09/09.01.lesson.html): Array declaration and concept of dictionary.
-  - [Lesson 9.2](lab09/09.02.lesson.html): An example with undeclared function in order to see what will happen to deal with errors
-  - [Lesson 9.3](lab09/09.03.lesson.html): Corrected version of lesson 9.2
+  - [Lesson 9.1](lab09/09.01.lesson.php): Array declaration and concept of dictionary.
+  - [Lesson 9.2](lab09/09.02.lesson.php): An example with undeclared function in order to see what will happen to deal with errors
+  - [Lesson 9.3](lab09/09.03.lesson.php): Corrected version of lesson 9.2
   - [Lesson 9.4](lab09/09.04.lesson): Concept of code reuse and how to deal with several files.
   - [Lesson 9.5](lab09/09.05.lesson): Classes declaration basics
   - [Lesson 9.6](lab09/09.06.lesson): More examples in OOP.
